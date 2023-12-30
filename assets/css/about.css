@@ -1,0 +1,304 @@
+body {
+    margin: 0;
+    background-color:#000000	;
+    color: white;
+    font-family: 'Sora', sans-serif;
+}
+
+#l-header {
+    padding: 25px;
+    background-color: #080808
+}
+.header-hidden {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+.header-visible {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+#nav_glowny {
+    font-size: 35px;
+    margin-left: 20px; /* Adjust margin as needed */
+    text-align: center; 
+    margin-top: -9px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+
+}
+
+#nav-logo
+{
+    text-decoration: none;
+    transition: none;
+    color: white;
+}
+
+#nav-menu {
+    text-align: left; /* Align the entire menu to the left */
+    margin-top: -35px;
+    font-size: 20px;
+}
+
+#nav-list {
+    padding: 0;
+    margin: 0;
+}
+
+#nav-item {
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 25px;
+    text-align: center;
+}
+
+
+a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+a:link {
+    color: white;
+    text-decoration: none;
+}
+
+@keyframes underline {
+    from {
+        text-decoration-width: 0;
+    }
+    to {
+        text-decoration-width: 100%;
+    }
+}
+
+a:hover {
+    color: red;
+    text-underline-offset: 5px;
+    text-decoration-color: white;
+    transition: color 0.7s ease;
+    
+}
+
+.btn {
+    position: absolute;
+    display: inline-block;
+    width: 166px;
+    height: 45px;
+    font-size: 12px;
+    line-height: 45px; /* Moved text up by reducing line-height */
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    cursor: pointer;
+    overflow: hidden;
+    top: 20px;
+    right: 5px;
+}
+  .btn svg {
+    position: absolute;
+    top: 0; left: 0;
+  }
+  .btn svg rect {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 1;
+    stroke-dasharray: 422, 0;
+    transition: all 1300ms ease-out;
+  }
+  .btn:hover svg rect {
+    stroke-width: 5;
+    stroke-dasharray: 10, 310;
+    stroke-dashoffset: 33;
+  }
+  
+  .btn:hover {
+    color:#fff;
+    font-size:18px;
+    letter-spacing:1px;
+    font-weight:bold;
+    
+  }
+
+main
+{
+    display: flex;
+    width: 1300px;
+    background-color: #010101;
+    margin-left: auto;
+    margin-right: auto;
+}
+#fll{
+    display: flex;
+    width: 1300px;
+    background-color: #010101;
+    margin-left: auto;
+    margin-right: auto;
+}
+#hist
+{
+    font-size: 15px;
+    width: 550px;
+    margin-top: 100px;
+    padding: 25px;
+    background-color: #010101;
+
+}
+
+#zjab
+{
+    padding: 25px;
+    width: 550px;
+    margin-top: 100px;
+    background-color: #020202;
+}
+
+footer
+{
+    text-align: center;
+    font-size: 15px;
+    padding: 10px;
+}
+#social {
+    display: flex;
+    justify-content: center; /* Dodajemy aby elementy były wyśrodkowane */
+    width: 1300px;
+    margin: 0 auto; /* Ustawiamy marginesy aby wycentrować sekcję */
+    text-align: center; /* Ustawiamy aby tekst wewnątrz też był wyśrodkowany */
+}
+
+#igc {
+    margin-right: auto; /* Dodajemy odstęp między ikoną Instagrama a tekstem */
+    margin-left: 25px;
+}
+#igct {
+    margin-top: -10px; /* Przesuwamy napis "<link>Instagram</link>" trochę do góry */
+    margin-left: 2px; /* Dodajemy odstęp między ikoną a tekstem */
+    font-size: 20px;
+}
+#maic
+{
+    margin-right: 125px; /* Dodajemy odstęp między ikoną Instagrama a tekstem */   
+}
+a#igct:link {
+    color: white;
+    text-decoration: none;
+}
+
+a#igct:hover {
+    background: linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #F77737, #FCAF45, #FFDC80); /* Dodajemy gradient w kolorach Instagrama */
+    -webkit-background-clip: text; /* Ustawiamy tło tekstu jako gradient */
+    color: transparent; /* Ustawiamy kolor tekstu jako transparentny, aby wyświetlić gradient */
+    text-decoration: none; /* Usuwamy domyślne podkreślenie */
+    <link>transition</link>: background 2s ease; /* Dodajemy płynne przejście dla tła trwające 2 sekundy */
+}
+.toggle-button {
+    position: absolute;
+    top: 1.25rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 480px) {
+    body {
+        font-size: 14px; /* Dodatkowe zmniejszenie wielkości czcionki */
+    }
+    main {
+        width: 95%; /* Dodatkowe zmniejszenie szerokości głównego kontenera */
+    }
+    #nav_glowny {
+        font-size: 20px; /* Dodatkowe zmniejszenie wielkości menu nawigacyjnego */
+    }
+    /* Pozostałe zmiany odpowiednie dla jeszcze mniejszych ekranów */
+}
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 50vh;
+        text-align: center;
+        background-color: #080808;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navbar-links ul {
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+    }
+
+    #nav-item {
+        margin-bottom: 30px;
+        margin-left: 20px;
+        font-size: 25px;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+
+    .btn {
+        display: none;
+    }
+}
+@media screen and (max-width: 768px) {
+    main, #fll {
+        width: 100%; /* Ustawiamy szerokość na 100% dla urządzeń o szerokości do 768px */
+        flex-direction: column; /* Zmieniamy układ elementów na columnowy */
+    }
+    #hist, #zjab {
+        width: 80%; /* Zmniejszamy szerokość sekcji #hist i #zjab */
+        margin: 20px 10px; /* Dodajemy marginesy dla odstępu od krawędzi */
+        font-size: 12px; /* Zmniejszamy rozmiar czcionki */
+    }
+    #social {
+        order: -1; /* Przesuwamy sekcję #social na górę */
+        text-align: left; /* Ustawiamy aby tekst wewnątrz też był wyśrodkowany */
+        font-size: 10px;
+        display: flex;
+        width: 20%;
+        margin: 0 auto; /* Ustawiamy marginesy aby wycentrować sekcję */
+        text-align: center; /* Ustawiamy aby tekst wewnątrz też był wyśrodkowany */
+    }
+    #igc, #maic {
+        margin: 10px 0; /* Dodajemy odstęp między ikonami */
+        margin-left: 20px;
+    }
+    #maic{
+        
+        margin-top: 20px;
+        margin-top: 17px;
+    }
+    #igct{
+        font-size: 10px;
+    }
+    #mli::before{
+        width: 20px;
+    }
+}

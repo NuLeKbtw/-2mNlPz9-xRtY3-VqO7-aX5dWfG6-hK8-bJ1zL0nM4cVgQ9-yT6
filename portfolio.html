@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter&family=Josefin+Sans:wght@700&family=Kanit&family=Open+Sans:wght@500&family=Poppins&family=Sora:wght@500&display=swap" rel="stylesheet">  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kamila Sokolewicz</title>
+    <link rel="stylesheet" href="assets/css/portfolio.css">
+  <script src="view-image.js?v2.1.0"></script>
+<script>
+  // initialize the library and done
+  window.ViewImage && ViewImage.init('#pzdj img');
+</script>
+    <script>
+        window.onscroll = function() {
+            var header = document.getElementById('l-header');
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                header.className = 'header-hidden';
+            } else {
+                header.className = 'header-visible';
+            }
+        };
+    </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+        <script src="jquery.scrollTo.min.js"></script>
+    
+
+      <script src="script.js" defer></script>
+    </head>
+<body>
+    
+
+    <header id="l-header">
+        <nav id="nav bd-grid" class="navbar">
+            <div id="nav_glowny">
+                <a id="nav-logo">Kamila Sokolewicz</a>
+            </div>
+
+            <div id="nav-menu" id="nav-menu">
+                <a href="#" class="toggle-button">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                  </a>
+                <ul id="nav-list" class="navbar-links">
+                    <li id="nav-item"><a href="index.html" id="nav-link">Home</a></li>
+                    <li id="nav-item"><a href="about.html" id="nav-link">About</a></li>
+                    <li id="nav-item"><a href="portfolio.html" id="nav-link">Portfolio</a></li>
+                </ul>
+            </div>
+            
+        <div class="btn">
+            <svg>
+              <rect x="0" y="0" fill="none" width="166" height="45"/>
+            </svg>
+           <a href="https://www.instagram.com/kami.fotografuje/" target="_blank">Instagram</a>
+        </div>
+        <script>
+            document.querySelector('.btn').addEventListener('click', function(event) {
+                window.location.href = "https://www.instagram.com/kami.fotografuje/";
+            });
+        </script>
+        </nav>
+    </header>
+
+    <main id="main">
+        <div id="pzdj">
+            <img src="assets/img/DSC_0001.webp" alt="" id="zdjmain">
+            <img src="assets/img/DSC_0024.webp" alt="" id="zdjmain">
+            <img src="assets/img/DSC_0026.webp" alt="" id="zdjmain">
+            <img src="assets/img/DSC_0032.webp" alt="" id="zdjmain">     
+            <img src="assets/img/DSC_0053.webp" alt="" id="zdjmain">
+            <img src="assets/img/DSC_0079.webp" alt="" id="zdjmain">
+            <img src="assets/img/DSC_0080.webp" alt="" id="zdjmain">
+            <img src="assets/img/DSC_0124.webp" alt="" id="zdjmain">
+            <img src="assets/img/DSC_0129.webp" alt="" id="zdjmain">
+            <img src="assets/img/DSC_0133.webp" alt="" id="zdjmain">
+            <img src="assets/img/DSC_0184.webp" alt="" id="zdjmain">
+            <img src="assets/img/DSC_0202.webp" alt="" id="zdjmain">
+            <img src="assets/img/DSC_0205.webp" alt="" id="zdjmain">
+            <img src="assets/img/IMG_9444.webp" alt="" id="zdjmain">
+            <img src="assets/img/IMG_9448.webp" alt="" id="zdjmain">
+            <img src="assets/img/IMG_9456.webp" alt="" id="zdjmain">
+            <img src="assets/img/IMG_9457.webp" alt="" id="zdjmain">
+            <img src="assets/img/IMG_9458.webp" alt="" id="zdjmain">
+            <img src="assets/img/IMG_9459.webp" alt="" id="zdjmain">
+            <img src="assets/img/IMG_9463.webp" alt="" id="zdjmain">
+            <img src="assets/img/IMG_9464.webp" alt="" id="zdjmain">
+            <img src="assets/img/IMG_9465.webp" alt="" id="zdjmain">
+            <img src="assets/img/IMG_9473.webp" alt="" id="zdjmain">
+            <img src="assets/img/IMG_1000.webp" alt="" id="zdjmain">
+            <img src="assets/img/DSC_0038.webp" alt="" id="zdjmain">
+            <img src="assets/img/DSC_0074.webp" alt="" id="zdjmain">
+            <img src="assets/img/IMG_2000.webp" alt="" id="zdjmain">
+        </div>
+    </main>
+    <script>
+    
+        jQuery(function($)
+                {
+                    //zresetuj scrolla
+                    $.scrollTo(0);
+                    
+        
+            
+                    $('.scrollup').click(function() { $.scrollTo($('body'), 860); });
+                }
+                );
+        
+                $(window).scroll(function()
+                {
+                    if($(this).scrollTop()>300) $('.scrollup').fadeIn();
+                    else $('.scrollup').fadeOut();		
+                }
+                );
+            </script>
+    <a href="#" class="scrollup"></a>
+
+    <footer>
+        <p>&copy; 2024 Kamila Sokolewicz Photography</p>
+    </footer>
+
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter&family=Josefin+Sans:wght@700&family=Kanit&family=Open+Sans:wght@500&family=Poppins&family=Sora:wght@500&display=swap" rel="stylesheet">  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kamila Sokolewicz</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://kit.fontawesome.com/1241255339.js" crossorigin="anonymous"></script>
+      <!-- Load the view-image.js library -->
+<script src="view-image.js?v2.1.0"></script>
+<script>
+  // initialize the library and done
+  window.ViewImage && ViewImage.init('#pzdj img');
+</script>
+    <script>
+        window.onscroll = function() {
+            var header = document.getElementById('l-header');
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                header.className = 'header-hidden';
+            } else {
+                header.className = 'header-visible';
+            }
+        };
+    </script>
+      <script src="script.js" defer></script>
+
+</head>
+<body>
+    
+          
+    <header id="l-header">
+        <nav id="nav bd-grid" class="navbar">
+            <div id="nav_glowny">
+                <a id="nav-logo">Kamila Sokolewicz</a>
+            </div>
+
+            <div id="nav-menu" id="nav-menu">
+                <a href="#" class="toggle-button">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                  </a>
+                <ul id="nav-list" class="navbar-links">
+                    <li id="nav-item"><a href="index.html" id="nav-link">Home</a></li>
+                    <li id="nav-item"><a href="about.html" id="nav-link">About</a></li>
+                    <li id="nav-item"><a href="portfolio.html" id="nav-link">Portfolio</a></li>
+                </ul>
+            </div>
+            
+        <div class="btn">
+            <svg>
+              <rect x="0" y="0" fill="none" width="166" height="45"/>
+            </svg>
+           <a href="https://www.instagram.com/kami.fotografuje/" target="_blank">Instagram</a>
+        </div>
+        <script>
+            document.querySelector('.btn').addEventListener('click', function(event) {
+                window.location.href = "https://www.instagram.com/kami.fotografuje/";
+            });
+        </script>
+        </nav>
+    </header>
+
+    <main id="main">
+        <div id="atyt">
+            Twoje życie w obiektywie - zapraszam do skorzystania z moich usług fotograficznych.
+        </div>
+        <div id="pzdj">
+            <img src="assets/img/IMG_9464.webp" alt="" id="zdjmain">
+            <img src="assets/img/DSC_0184.webp" alt="" id="zdjmain">
+            <img src="assets/img/DSC_0129.webp" alt="" id="zdjmain">
+            <img src="assets/img/DSC_0080.webp" alt="" id="zdjmain">
+            <img src="assets/img/DSC_0026.webp" alt="" id="zdjmain">
+            <img src="assets/img/DSC_0079.webp" alt="" id="zdjmain">
+        
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Kamila Sokolewicz Photography</p>
+    </footer>
+
+</body>
+</html>
