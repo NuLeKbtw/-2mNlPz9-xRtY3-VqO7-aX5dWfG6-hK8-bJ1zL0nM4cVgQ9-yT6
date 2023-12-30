@@ -18,6 +18,7 @@ Data utworzenia: *2023-09-28*
 Jeśli planujesz dokonywać zmian w kodzie źródłowym tej strony, proszę upewnij się, że:
 
 • Zmiany są oznaczone jako ***© Copyright NuLeKbtw***
+
 • Wszelkie nowe funkcjonalności są dodawane z poszanowaniem oryginalnego stylu i estetyki strony
 
 **Readme (English version)**
@@ -39,4 +40,5 @@ Creation date: *2023-09-28*
 If you plan to make changes to the source code of this website, please make sure that:
 
 • Changes are marked as ***© Copyright NuLeKbtw***
+
 • Any new features are added with respect to the original style and aesthetics of the site
